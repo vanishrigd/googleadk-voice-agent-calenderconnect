@@ -88,7 +88,7 @@ The Google Calendar integration supports working with multiple calendars. The OA
 
 Examples:
 - "Show me all my calendars"
-- "Create a meeting in my Work calendar"
+- "Create a meeting in my Work calendar" 
 - "What's on my Family calendar this weekend?"
 
 ## Using the Calendar Integration
@@ -156,19 +156,3 @@ If you encounter issues installing the required packages:
 - The OAuth token is stored securely in your user directory
 - Never share your `credentials.json` file or the generated token
 - The application only requests the minimum permissions needed for calendar operations
-
-## Starting the App
-
-From the project root:
-
-```bash
-python setup_calendar_auth.py
-```
-
-Then run:
-
-```bash
-.venv/bin/python -m uvicorn app.main:app --reload
-```
-
-Open `http://127.0.0.1:8000/` in your browser.
